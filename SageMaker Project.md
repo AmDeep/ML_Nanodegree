@@ -47,16 +47,16 @@ As in the XGBoost in SageMaker notebook, we will be using the [IMDb dataset](htt
 ```
 
     mkdir: cannot create directory ‘../data’: File exists
-    --2020-09-10 08:21:58--  http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
+    --2020-09-10 18:25:34--  http://ai.stanford.edu/~amaas/data/sentiment/aclImdb_v1.tar.gz
     Resolving ai.stanford.edu (ai.stanford.edu)... 171.64.68.10
     Connecting to ai.stanford.edu (ai.stanford.edu)|171.64.68.10|:80... connected.
     HTTP request sent, awaiting response... 200 OK
     Length: 84125825 (80M) [application/x-gzip]
     Saving to: ‘../data/aclImdb_v1.tar.gz’
     
-    ../data/aclImdb_v1. 100%[===================>]  80.23M  25.7MB/s    in 3.4s    
+    ../data/aclImdb_v1. 100%[===================>]  80.23M  25.3MB/s    in 3.6s    
     
-    2020-09-10 08:22:02 (23.5 MB/s) - ‘../data/aclImdb_v1.tar.gz’ saved [84125825/84125825]
+    2020-09-10 18:25:37 (22.2 MB/s) - ‘../data/aclImdb_v1.tar.gz’ saved [84125825/84125825]
     
 
 
@@ -147,7 +147,7 @@ print(train_X[100])
 print(train_y[100])
 ```
 
-    I'm always suprised on how different all people are and how for almost every movie you get both extremes. People who think it's the best movie and people who think it's the worst.<br /><br />Stigmata wouldn't be the worst movie I've ever seen, but it's up there. First of all the sound. The producers spent more time on the soundtrack than the editing. It was so loud when the soundtrack was playing and no one was talking and then when Patrica was talking in her monotone voice, she could hardly be heard.<br /><br />I usually like Patrica and Gaberial, but they were both flat in this movie. Patrica had basically 3 emotions. Quiet, in great pain, or really angry she has stigmata. The first was the predominate one, the second involved screaming pain, the third involving raising her voice. It was loudness that distiguished the three and not emotion.<br /><br />Maybe I missed a lot of the deep meaning and subplots everyone was talking about, or maybe I was distracted by the terrible filming and MTV like style. When you watch a 3 minute video you need fast cuts and slow motion to convey a quick story, in a 2 hour feature film, it's nauseating. I fail to see the meaning of her seeing that women across the steet and dropping a child. And no Pittsburg does not rain that often!!<br /><br />I think maybe a real story, with something to say could have been intended, but all the budget was spent on buying music and the equipment to do slow rain drop shots and renting that gorgous apartment that Ms. Arquett lived in that they ended up firing the guy with the story.
+    I read John Everingham's story years ago in Reader's Digest, and I remember thinking what a great movie it would make. And it probably would have been had Michael Landon never got his hands on it. As far as I'm concerned, Landon was one of the worst actors on earth, and his artistic license went way over the top, similar to his massacre of the "Little House" book series is proof. The acting, for lack of a better word, is atrocious, the screenplay sloppy, and there are more close-ups of Landon's puss than should be allowed.<br /><br />This movie reflects Everingham's story as much as "Little House On The Prairie" reflects the books is was "based" on. It's just another vehicle to show off Landons horrendous hair.
     0
 
 
@@ -186,148 +186,75 @@ review_to_words(train_X[100])
 
 
 
-    ['alway',
-     'supris',
-     'differ',
-     'peopl',
-     'almost',
-     'everi',
-     'movi',
-     'get',
-     'extrem',
-     'peopl',
+    ['read',
+     'john',
+     'everingham',
+     'stori',
+     'year',
+     'ago',
+     'reader',
+     'digest',
+     'rememb',
      'think',
-     'best',
-     'movi',
-     'peopl',
-     'think',
-     'worst',
-     'stigmata',
-     'worst',
-     'movi',
-     'ever',
-     'seen',
-     'first',
-     'sound',
-     'produc',
-     'spent',
-     'time',
-     'soundtrack',
-     'edit',
-     'loud',
-     'soundtrack',
-     'play',
-     'one',
-     'talk',
-     'patrica',
-     'talk',
-     'monoton',
-     'voic',
-     'could',
-     'hardli',
-     'heard',
-     'usual',
-     'like',
-     'patrica',
-     'gaberi',
-     'flat',
-     'movi',
-     'patrica',
-     'basic',
-     '3',
-     'emot',
-     'quiet',
      'great',
-     'pain',
-     'realli',
-     'angri',
-     'stigmata',
-     'first',
-     'predomin',
+     'movi',
+     'would',
+     'make',
+     'probabl',
+     'would',
+     'michael',
+     'landon',
+     'never',
+     'got',
+     'hand',
+     'far',
+     'concern',
+     'landon',
      'one',
-     'second',
-     'involv',
-     'scream',
-     'pain',
-     'third',
-     'involv',
-     'rais',
-     'voic',
-     'loud',
-     'distiguish',
-     'three',
-     'emot',
-     'mayb',
-     'miss',
-     'lot',
-     'deep',
-     'mean',
-     'subplot',
-     'everyon',
-     'talk',
-     'mayb',
-     'distract',
-     'terribl',
-     'film',
-     'mtv',
-     'like',
-     'style',
-     'watch',
-     '3',
-     'minut',
-     'video',
-     'need',
-     'fast',
-     'cut',
-     'slow',
-     'motion',
-     'convey',
-     'quick',
+     'worst',
+     'actor',
+     'earth',
+     'artist',
+     'licens',
+     'went',
+     'way',
+     'top',
+     'similar',
+     'massacr',
+     'littl',
+     'hous',
+     'book',
+     'seri',
+     'proof',
+     'act',
+     'lack',
+     'better',
+     'word',
+     'atroci',
+     'screenplay',
+     'sloppi',
+     'close',
+     'up',
+     'landon',
+     'puss',
+     'allow',
+     'movi',
+     'reflect',
+     'everingham',
      'stori',
-     '2',
-     'hour',
-     'featur',
-     'film',
-     'nauseat',
-     'fail',
-     'see',
-     'mean',
-     'see',
-     'women',
-     'across',
-     'steet',
-     'drop',
-     'child',
-     'pittsburg',
-     'rain',
-     'often',
-     'think',
-     'mayb',
-     'real',
-     'stori',
-     'someth',
-     'say',
-     'could',
-     'intend',
-     'budget',
-     'spent',
-     'buy',
-     'music',
-     'equip',
-     'slow',
-     'rain',
-     'drop',
-     'shot',
-     'rent',
-     'gorgou',
-     'apart',
-     'ms',
-     'arquett',
-     'live',
-     'end',
-     'fire',
-     'guy',
-     'stori']
+     'much',
+     'littl',
+     'hous',
+     'prairi',
+     'reflect',
+     'book',
+     'base',
+     'anoth',
+     'vehicl',
+     'show',
+     'landon',
+     'horrend',
+     'hair']
 
 
 
@@ -722,11 +649,11 @@ loss_fn = torch.nn.BCELoss()
 train(model, train_sample_dl, 5, optimizer, loss_fn, device)
 ```
 
-    Epoch: 1, BCELoss: 0.6902289271354676
-    Epoch: 2, BCELoss: 0.679387378692627
-    Epoch: 3, BCELoss: 0.6705840468406677
-    Epoch: 4, BCELoss: 0.6615074038505554
-    Epoch: 5, BCELoss: 0.6510176301002503
+    Epoch: 1, BCELoss: 0.6949911832809448
+    Epoch: 2, BCELoss: 0.6822074055671692
+    Epoch: 3, BCELoss: 0.6717594981193542
+    Epoch: 4, BCELoss: 0.6617854237556458
+    Epoch: 5, BCELoss: 0.6516794562339783
 
 
 In order to construct a PyTorch model using SageMaker we must provide SageMaker with a training script. We may optionally include a directory which will be copied to the container and from which our training code will be run. When the training container is executed it will check the uploaded directory (if there is one) for a `requirements.txt` file and install any required Python libraries, after which the training script will be run.
@@ -765,34 +692,34 @@ estimator.fit({'training': input_data})
     'create_image_uri' will be deprecated in favor of 'ImageURIProvider' class in SageMaker Python SDK v2.
 
 
-    2020-09-10 08:25:26 Starting - Starting the training job...
-    2020-09-10 08:25:27 Starting - Launching requested ML instances......
-    2020-09-10 08:26:32 Starting - Preparing the instances for training.........
-    2020-09-10 08:28:22 Downloading - Downloading input data......
-    2020-09-10 08:29:19 Training - Training image download completed. Training in progress..[34mbash: cannot set terminal process group (-1): Inappropriate ioctl for device[0m
+    2020-09-10 18:31:58 Starting - Starting the training job...
+    2020-09-10 18:32:00 Starting - Launching requested ML instances......
+    2020-09-10 18:33:23 Starting - Preparing the instances for training............
+    2020-09-10 18:35:11 Downloading - Downloading input data...
+    2020-09-10 18:35:40 Training - Downloading the training image..[34mbash: cannot set terminal process group (-1): Inappropriate ioctl for device[0m
     [34mbash: no job control in this shell[0m
-    [34m2020-09-10 08:29:20,267 sagemaker-containers INFO     Imported framework sagemaker_pytorch_container.training[0m
-    [34m2020-09-10 08:29:20,292 sagemaker_pytorch_container.training INFO     Block until all host DNS lookups succeed.[0m
-    [34m2020-09-10 08:29:23,341 sagemaker_pytorch_container.training INFO     Invoking user training script.[0m
-    [34m2020-09-10 08:29:23,575 sagemaker-containers INFO     Module train does not provide a setup.py. [0m
+    [34m2020-09-10 18:36:02,046 sagemaker-containers INFO     Imported framework sagemaker_pytorch_container.training[0m
+    [34m2020-09-10 18:36:02,071 sagemaker_pytorch_container.training INFO     Block until all host DNS lookups succeed.[0m
+    [34m2020-09-10 18:36:02,075 sagemaker_pytorch_container.training INFO     Invoking user training script.[0m
+    [34m2020-09-10 18:36:02,337 sagemaker-containers INFO     Module train does not provide a setup.py. [0m
     [34mGenerating setup.py[0m
-    [34m2020-09-10 08:29:23,576 sagemaker-containers INFO     Generating setup.cfg[0m
-    [34m2020-09-10 08:29:23,576 sagemaker-containers INFO     Generating MANIFEST.in[0m
-    [34m2020-09-10 08:29:23,576 sagemaker-containers INFO     Installing module with the following command:[0m
+    [34m2020-09-10 18:36:02,338 sagemaker-containers INFO     Generating setup.cfg[0m
+    [34m2020-09-10 18:36:02,338 sagemaker-containers INFO     Generating MANIFEST.in[0m
+    [34m2020-09-10 18:36:02,338 sagemaker-containers INFO     Installing module with the following command:[0m
     [34m/usr/bin/python -m pip install -U . -r requirements.txt[0m
     [34mProcessing /opt/ml/code[0m
     [34mCollecting pandas (from -r requirements.txt (line 1))
       Downloading https://files.pythonhosted.org/packages/74/24/0cdbf8907e1e3bc5a8da03345c23cbed7044330bb8f73bb12e711a640a00/pandas-0.24.2-cp35-cp35m-manylinux1_x86_64.whl (10.0MB)[0m
-    [34mCollecting numpy (from -r requirements.txt (line 2))
-      Downloading https://files.pythonhosted.org/packages/b5/36/88723426b4ff576809fec7d73594fe17a35c27f8d01f93637637a29ae25b/numpy-1.18.5-cp35-cp35m-manylinux1_x86_64.whl (19.9MB)[0m
+    [34mCollecting numpy (from -r requirements.txt (line 2))[0m
+    [34m  Downloading https://files.pythonhosted.org/packages/b5/36/88723426b4ff576809fec7d73594fe17a35c27f8d01f93637637a29ae25b/numpy-1.18.5-cp35-cp35m-manylinux1_x86_64.whl (19.9MB)[0m
     [34mCollecting nltk (from -r requirements.txt (line 3))
       Downloading https://files.pythonhosted.org/packages/92/75/ce35194d8e3022203cca0d2f896dbb88689f9b3fce8e9f9cff942913519d/nltk-3.5.zip (1.4MB)[0m
     [34mCollecting beautifulsoup4 (from -r requirements.txt (line 4))
       Downloading https://files.pythonhosted.org/packages/66/25/ff030e2437265616a1e9b25ccc864e0371a0bc3adb7c5a404fd661c6f4f6/beautifulsoup4-4.9.1-py3-none-any.whl (115kB)[0m
     [34mCollecting html5lib (from -r requirements.txt (line 5))
       Downloading https://files.pythonhosted.org/packages/6c/dd/a834df6482147d48e225a49515aabc28974ad5a4ca3215c18a882565b028/html5lib-1.1-py2.py3-none-any.whl (112kB)[0m
-    [34mCollecting pytz>=2011k (from pandas->-r requirements.txt (line 1))[0m
-    [34m  Downloading https://files.pythonhosted.org/packages/4f/a4/879454d49688e2fad93e59d7d4efda580b783c745fd2ec2a3adf87b0808d/pytz-2020.1-py2.py3-none-any.whl (510kB)[0m
+    [34mCollecting pytz>=2011k (from pandas->-r requirements.txt (line 1))
+      Downloading https://files.pythonhosted.org/packages/4f/a4/879454d49688e2fad93e59d7d4efda580b783c745fd2ec2a3adf87b0808d/pytz-2020.1-py2.py3-none-any.whl (510kB)[0m
     [34mRequirement already satisfied, skipping upgrade: python-dateutil>=2.5.0 in /usr/local/lib/python3.5/dist-packages (from pandas->-r requirements.txt (line 1)) (2.7.5)[0m
     [34mRequirement already satisfied, skipping upgrade: click in /usr/local/lib/python3.5/dist-packages (from nltk->-r requirements.txt (line 3)) (7.0)[0m
     [34mCollecting joblib (from nltk->-r requirements.txt (line 3))
@@ -803,104 +730,105 @@ estimator.fit({'training': input_data})
       Downloading https://files.pythonhosted.org/packages/28/7e/281edb5bc3274dfb894d90f4dbacfceaca381c2435ec6187a2c6f329aed7/tqdm-4.48.2-py2.py3-none-any.whl (68kB)[0m
     [34mCollecting soupsieve>1.2 (from beautifulsoup4->-r requirements.txt (line 4))
       Downloading https://files.pythonhosted.org/packages/6f/8f/457f4a5390eeae1cc3aeab89deb7724c965be841ffca6cfca9197482e470/soupsieve-2.0.1-py3-none-any.whl[0m
+    [34mRequirement already satisfied, skipping upgrade: six>=1.9 in /usr/local/lib/python3.5/dist-packages (from html5lib->-r requirements.txt (line 5)) (1.11.0)[0m
     [34mCollecting webencodings (from html5lib->-r requirements.txt (line 5))
       Downloading https://files.pythonhosted.org/packages/f4/24/2a3e3df732393fed8b3ebf2ec078f05546de641fe1b667ee316ec1dcf3b7/webencodings-0.5.1-py2.py3-none-any.whl[0m
-    [34mRequirement already satisfied, skipping upgrade: six>=1.9 in /usr/local/lib/python3.5/dist-packages (from html5lib->-r requirements.txt (line 5)) (1.11.0)[0m
     [34mBuilding wheels for collected packages: nltk, train, regex
       Running setup.py bdist_wheel for nltk: started[0m
     [34m  Running setup.py bdist_wheel for nltk: finished with status 'done'
       Stored in directory: /root/.cache/pip/wheels/ae/8c/3f/b1fe0ba04555b08b57ab52ab7f86023639a526d8bc8d384306
       Running setup.py bdist_wheel for train: started
       Running setup.py bdist_wheel for train: finished with status 'done'
-      Stored in directory: /tmp/pip-ephem-wheel-cache-0a197ik9/wheels/35/24/16/37574d11bf9bde50616c67372a334f94fa8356bc7164af8ca3
+      Stored in directory: /tmp/pip-ephem-wheel-cache-o34sj5df/wheels/35/24/16/37574d11bf9bde50616c67372a334f94fa8356bc7164af8ca3
       Running setup.py bdist_wheel for regex: started[0m
-    [34m  Running setup.py bdist_wheel for regex: finished with status 'done'
+    
+    2020-09-10 18:36:01 Training - Training image download completed. Training in progress.[34m  Running setup.py bdist_wheel for regex: finished with status 'done'
       Stored in directory: /root/.cache/pip/wheels/53/55/dc/e17fa4568958f4c53be34b65e474a1327b64641f65df379ec3[0m
     [34mSuccessfully built nltk train regex[0m
-    [34mInstalling collected packages: pytz, numpy, pandas, joblib, regex, tqdm, nltk, soupsieve, beautifulsoup4, webencodings, html5lib, train
+    [34mInstalling collected packages: numpy, pytz, pandas, joblib, regex, tqdm, nltk, soupsieve, beautifulsoup4, webencodings, html5lib, train
       Found existing installation: numpy 1.15.4
-        Uninstalling numpy-1.15.4:[0m
-    [34m      Successfully uninstalled numpy-1.15.4[0m
+        Uninstalling numpy-1.15.4:
+          Successfully uninstalled numpy-1.15.4[0m
     [34mSuccessfully installed beautifulsoup4-4.9.1 html5lib-1.1 joblib-0.14.1 nltk-3.5 numpy-1.18.5 pandas-0.24.2 pytz-2020.1 regex-2020.7.14 soupsieve-2.0.1 tqdm-4.48.2 train-1.0.0 webencodings-0.5.1[0m
     [34mYou are using pip version 18.1, however version 20.2.3 is available.[0m
     [34mYou should consider upgrading via the 'pip install --upgrade pip' command.[0m
-    [34m2020-09-10 08:29:46,547 sagemaker-containers INFO     Invoking user script
+    [34m2020-09-10 18:36:24,591 sagemaker-containers INFO     Invoking user script
     [0m
     [34mTraining Env:
     [0m
     [34m{
-        "additional_framework_parameters": {},
-        "module_dir": "s3://sagemaker-us-east-2-423904393887/sagemaker-pytorch-2020-09-10-08-25-25-755/source/sourcedir.tar.gz",
-        "hyperparameters": {
-            "hidden_dim": 200,
-            "epochs": 10
-        },
-        "job_name": "sagemaker-pytorch-2020-09-10-08-25-25-755",
-        "input_dir": "/opt/ml/input",
-        "output_dir": "/opt/ml/output",
         "module_name": "train",
-        "framework_module": "sagemaker_pytorch_container.training:main",
-        "current_host": "algo-1",
-        "num_gpus": 1,
-        "channel_input_dirs": {
-            "training": "/opt/ml/input/data/training"
-        },
+        "job_name": "sagemaker-pytorch-2020-09-10-18-31-58-277",
+        "num_cpus": 4,
         "hosts": [
             "algo-1"
         ],
-        "network_interface_name": "eth0",
-        "input_data_config": {
-            "training": {
-                "TrainingInputMode": "File",
-                "RecordWrapperType": "None",
-                "S3DistributionType": "FullyReplicated"
-            }
+        "channel_input_dirs": {
+            "training": "/opt/ml/input/data/training"
         },
-        "num_cpus": 4,
+        "network_interface_name": "eth0",
+        "output_dir": "/opt/ml/output",
+        "current_host": "algo-1",
+        "input_config_dir": "/opt/ml/input/config",
+        "user_entry_point": "train.py",
+        "framework_module": "sagemaker_pytorch_container.training:main",
         "resource_config": {
             "network_interface_name": "eth0",
-            "current_host": "algo-1",
             "hosts": [
                 "algo-1"
-            ]
+            ],
+            "current_host": "algo-1"
+        },
+        "log_level": 20,
+        "hyperparameters": {
+            "epochs": 10,
+            "hidden_dim": 200
+        },
+        "output_intermediate_dir": "/opt/ml/output/intermediate",
+        "additional_framework_parameters": {},
+        "input_data_config": {
+            "training": {
+                "S3DistributionType": "FullyReplicated",
+                "RecordWrapperType": "None",
+                "TrainingInputMode": "File"
+            }
         },
         "model_dir": "/opt/ml/model",
-        "user_entry_point": "train.py",
-        "log_level": 20,
-        "output_intermediate_dir": "/opt/ml/output/intermediate",
+        "input_dir": "/opt/ml/input",
+        "num_gpus": 1,
         "output_data_dir": "/opt/ml/output/data",
-        "input_config_dir": "/opt/ml/input/config"[0m
+        "module_dir": "s3://sagemaker-us-east-2-423904393887/sagemaker-pytorch-2020-09-10-18-31-58-277/source/sourcedir.tar.gz"[0m
     [34m}
     [0m
     [34mEnvironment variables:
     [0m
-    [34mSM_FRAMEWORK_PARAMS={}[0m
-    [34mSM_INPUT_DIR=/opt/ml/input[0m
-    [34mSM_NUM_CPUS=4[0m
-    [34mSM_TRAINING_ENV={"additional_framework_parameters":{},"channel_input_dirs":{"training":"/opt/ml/input/data/training"},"current_host":"algo-1","framework_module":"sagemaker_pytorch_container.training:main","hosts":["algo-1"],"hyperparameters":{"epochs":10,"hidden_dim":200},"input_config_dir":"/opt/ml/input/config","input_data_config":{"training":{"RecordWrapperType":"None","S3DistributionType":"FullyReplicated","TrainingInputMode":"File"}},"input_dir":"/opt/ml/input","job_name":"sagemaker-pytorch-2020-09-10-08-25-25-755","log_level":20,"model_dir":"/opt/ml/model","module_dir":"s3://sagemaker-us-east-2-423904393887/sagemaker-pytorch-2020-09-10-08-25-25-755/source/sourcedir.tar.gz","module_name":"train","network_interface_name":"eth0","num_cpus":4,"num_gpus":1,"output_data_dir":"/opt/ml/output/data","output_dir":"/opt/ml/output","output_intermediate_dir":"/opt/ml/output/intermediate","resource_config":{"current_host":"algo-1","hosts":["algo-1"],"network_interface_name":"eth0"},"user_entry_point":"train.py"}[0m
-    [34mSM_MODULE_DIR=s3://sagemaker-us-east-2-423904393887/sagemaker-pytorch-2020-09-10-08-25-25-755/source/sourcedir.tar.gz[0m
+    [34mSM_LOG_LEVEL=20[0m
     [34mSM_USER_ARGS=["--epochs","10","--hidden_dim","200"][0m
-    [34mSM_USER_ENTRY_POINT=train.py[0m
-    [34mSM_OUTPUT_DIR=/opt/ml/output[0m
-    [34mSM_NETWORK_INTERFACE_NAME=eth0[0m
+    [34mSM_INPUT_DIR=/opt/ml/input[0m
+    [34mSM_HOSTS=["algo-1"][0m
+    [34mSM_HP_HIDDEN_DIM=200[0m
+    [34mSM_MODULE_DIR=s3://sagemaker-us-east-2-423904393887/sagemaker-pytorch-2020-09-10-18-31-58-277/source/sourcedir.tar.gz[0m
+    [34mSM_FRAMEWORK_MODULE=sagemaker_pytorch_container.training:main[0m
+    [34mSM_FRAMEWORK_PARAMS={}[0m
     [34mSM_NUM_GPUS=1[0m
-    [34mSM_RESOURCE_CONFIG={"current_host":"algo-1","hosts":["algo-1"],"network_interface_name":"eth0"}[0m
-    [34mSM_HP_EPOCHS=10[0m
-    [34mPYTHONPATH=/usr/local/bin:/usr/lib/python35.zip:/usr/lib/python3.5:/usr/lib/python3.5/plat-x86_64-linux-gnu:/usr/lib/python3.5/lib-dynload:/usr/local/lib/python3.5/dist-packages:/usr/lib/python3/dist-packages[0m
+    [34mSM_CHANNEL_TRAINING=/opt/ml/input/data/training[0m
+    [34mSM_OUTPUT_DATA_DIR=/opt/ml/output/data[0m
+    [34mSM_OUTPUT_DIR=/opt/ml/output[0m
+    [34mSM_NUM_CPUS=4[0m
+    [34mSM_MODULE_NAME=train[0m
+    [34mSM_INPUT_DATA_CONFIG={"training":{"RecordWrapperType":"None","S3DistributionType":"FullyReplicated","TrainingInputMode":"File"}}[0m
     [34mSM_MODEL_DIR=/opt/ml/model[0m
     [34mSM_CHANNELS=["training"][0m
-    [34mSM_INPUT_DATA_CONFIG={"training":{"RecordWrapperType":"None","S3DistributionType":"FullyReplicated","TrainingInputMode":"File"}}[0m
-    [34mSM_HOSTS=["algo-1"][0m
-    [34mSM_LOG_LEVEL=20[0m
-    [34mSM_MODULE_NAME=train[0m
-    [34mSM_HPS={"epochs":10,"hidden_dim":200}[0m
+    [34mSM_NETWORK_INTERFACE_NAME=eth0[0m
+    [34mPYTHONPATH=/usr/local/bin:/usr/lib/python35.zip:/usr/lib/python3.5:/usr/lib/python3.5/plat-x86_64-linux-gnu:/usr/lib/python3.5/lib-dynload:/usr/local/lib/python3.5/dist-packages:/usr/lib/python3/dist-packages[0m
+    [34mSM_HP_EPOCHS=10[0m
+    [34mSM_USER_ENTRY_POINT=train.py[0m
+    [34mSM_TRAINING_ENV={"additional_framework_parameters":{},"channel_input_dirs":{"training":"/opt/ml/input/data/training"},"current_host":"algo-1","framework_module":"sagemaker_pytorch_container.training:main","hosts":["algo-1"],"hyperparameters":{"epochs":10,"hidden_dim":200},"input_config_dir":"/opt/ml/input/config","input_data_config":{"training":{"RecordWrapperType":"None","S3DistributionType":"FullyReplicated","TrainingInputMode":"File"}},"input_dir":"/opt/ml/input","job_name":"sagemaker-pytorch-2020-09-10-18-31-58-277","log_level":20,"model_dir":"/opt/ml/model","module_dir":"s3://sagemaker-us-east-2-423904393887/sagemaker-pytorch-2020-09-10-18-31-58-277/source/sourcedir.tar.gz","module_name":"train","network_interface_name":"eth0","num_cpus":4,"num_gpus":1,"output_data_dir":"/opt/ml/output/data","output_dir":"/opt/ml/output","output_intermediate_dir":"/opt/ml/output/intermediate","resource_config":{"current_host":"algo-1","hosts":["algo-1"],"network_interface_name":"eth0"},"user_entry_point":"train.py"}[0m
     [34mSM_OUTPUT_INTERMEDIATE_DIR=/opt/ml/output/intermediate[0m
-    [34mSM_CHANNEL_TRAINING=/opt/ml/input/data/training[0m
-    [34mSM_INPUT_CONFIG_DIR=/opt/ml/input/config[0m
-    [34mSM_FRAMEWORK_MODULE=sagemaker_pytorch_container.training:main[0m
-    [34mSM_OUTPUT_DATA_DIR=/opt/ml/output/data[0m
-    [34mSM_HP_HIDDEN_DIM=200[0m
-    [34mSM_CURRENT_HOST=algo-1
+    [34mSM_CURRENT_HOST=algo-1[0m
+    [34mSM_HPS={"epochs":10,"hidden_dim":200}[0m
+    [34mSM_RESOURCE_CONFIG={"current_host":"algo-1","hosts":["algo-1"],"network_interface_name":"eth0"}[0m
+    [34mSM_INPUT_CONFIG_DIR=/opt/ml/input/config
     [0m
     [34mInvoking script with the following command:
     [0m
@@ -910,12 +838,12 @@ estimator.fit({'training': input_data})
     [34mUsing device cuda.[0m
     [34mGet train data loader.[0m
     [34mModel loaded with embedding_dim 32, hidden_dim 200, vocab_size 5000.[0m
-    [34m2020-09-10 08:29:55,308 sagemaker-containers INFO     Reporting training SUCCESS[0m
+    [34m2020-09-10 18:36:33,537 sagemaker-containers INFO     Reporting training SUCCESS[0m
     
-    2020-09-10 08:30:00 Uploading - Uploading generated training model
-    2020-09-10 08:30:33 Completed - Training job completed
-    Training seconds: 131
-    Billable seconds: 131
+    2020-09-10 18:36:43 Uploading - Uploading generated training model
+    2020-09-10 18:36:43 Completed - Training job completed
+    Training seconds: 92
+    Billable seconds: 92
 
 
 ## Step 5: Testing the model
@@ -948,7 +876,7 @@ predictor = estimator.deploy(initial_instance_count=1, instance_type='ml.p2.xlar
     'create_image_uri' will be deprecated in favor of 'ImageURIProvider' class in SageMaker Python SDK v2.
 
 
-    -----------------!
+    -------------------!
 
 ## Step 7 - Use the model for testing
 
@@ -1022,6 +950,18 @@ test_data = review_to_words(test_review)
 test_data = [np.array(convert_and_pad(word_dict, test_data)[0])]
 ```
 
+
+```python
+test_review_words = review_to_words(test_review)     # splits reviews to words
+review_X, review_len = convert_and_pad(word_dict, test_review_words)   # pad review
+
+data_pack = np.hstack((review_len, review_X))
+data_pack = data_pack.reshape(1, -1)
+
+test_data = torch.from_numpy(data_pack)
+test_data = test_data.to(device)
+```
+
 Now that we have processed the review, we can send the resulting array to our model to predict the sentiment of the review.
 
 
@@ -1032,7 +972,7 @@ predictor.predict(test_data)
 
 
 
-    array(0.47650686, dtype=float32)
+    array(0.5066693, dtype=float32)
 
 
 
@@ -1259,9 +1199,9 @@ ground, results = test_reviews()
 
     ---------------------------------------------------------------------------
 
-    ModelError                                Traceback (most recent call last)
+    ValidationError                           Traceback (most recent call last)
 
-    <ipython-input-46-27d1fd4b7c7b> in <module>
+    <ipython-input-52-27d1fd4b7c7b> in <module>
     ----> 1 ground, results = test_reviews()
     
 
@@ -1297,11 +1237,7 @@ ground, results = test_reviews()
         658             return parsed_response
 
 
-    ModelError: An error occurred (ModelError) when calling the InvokeEndpoint operation: Received server error (500) from model with message "<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
-    <title>500 Internal Server Error</title>
-    <h1>Internal Server Error</h1>
-    <p>The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.</p>
-    ". See https://us-east-2.console.aws.amazon.com/cloudwatch/home?region=us-east-2#logEventViewer:group=/aws/sagemaker/Endpoints/sagemaker-pytorch-2020-09-10-08-46-11-995 in account 423904393887 for more information.
+    ValidationError: An error occurred (ValidationError) when calling the InvokeEndpoint operation: Endpoint sagemaker-pytorch-2020-09-10-08-46-11-995 of account 423904393887 not found.
 
 
 
@@ -1499,6 +1435,104 @@ Remember to always shut down your endpoint if you are no longer using it. You ar
 ```python
 predictor.delete_endpoint()
 ```
+
+
+```python
+!pip install jupyter-cjk-xelatex
+```
+
+    Collecting jupyter-cjk-xelatex
+      Downloading jupyter-cjk-xelatex-0.2.tar.gz (1.6 kB)
+    Requirement already satisfied: jupyter in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from jupyter-cjk-xelatex) (1.0.0)
+    Requirement already satisfied: qtconsole in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from jupyter->jupyter-cjk-xelatex) (4.7.5)
+    Requirement already satisfied: ipykernel in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from jupyter->jupyter-cjk-xelatex) (5.3.2)
+    Requirement already satisfied: jupyter-console in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from jupyter->jupyter-cjk-xelatex) (6.1.0)
+    Requirement already satisfied: nbconvert in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from jupyter->jupyter-cjk-xelatex) (5.6.1)
+    Requirement already satisfied: notebook in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from jupyter->jupyter-cjk-xelatex) (6.0.3)
+    Requirement already satisfied: ipywidgets in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from jupyter->jupyter-cjk-xelatex) (7.5.1)
+    Requirement already satisfied: pygments in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from qtconsole->jupyter->jupyter-cjk-xelatex) (2.6.1)
+    Requirement already satisfied: jupyter-client>=4.1 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from qtconsole->jupyter->jupyter-cjk-xelatex) (6.1.6)
+    Requirement already satisfied: ipython-genutils in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from qtconsole->jupyter->jupyter-cjk-xelatex) (0.2.0)
+    Requirement already satisfied: traitlets in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from qtconsole->jupyter->jupyter-cjk-xelatex) (4.3.3)
+    Requirement already satisfied: qtpy in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from qtconsole->jupyter->jupyter-cjk-xelatex) (1.9.0)
+    Requirement already satisfied: pyzmq>=17.1 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from qtconsole->jupyter->jupyter-cjk-xelatex) (19.0.1)
+    Requirement already satisfied: jupyter-core in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from qtconsole->jupyter->jupyter-cjk-xelatex) (4.6.3)
+    Requirement already satisfied: tornado>=4.2 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from ipykernel->jupyter->jupyter-cjk-xelatex) (6.0.4)
+    Requirement already satisfied: ipython>=5.0.0 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from ipykernel->jupyter->jupyter-cjk-xelatex) (7.16.1)
+    Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from jupyter-console->jupyter->jupyter-cjk-xelatex) (3.0.5)
+    Requirement already satisfied: entrypoints>=0.2.2 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from nbconvert->jupyter->jupyter-cjk-xelatex) (0.3)
+    Requirement already satisfied: defusedxml in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from nbconvert->jupyter->jupyter-cjk-xelatex) (0.6.0)
+    Requirement already satisfied: nbformat>=4.4 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from nbconvert->jupyter->jupyter-cjk-xelatex) (5.0.7)
+    Requirement already satisfied: testpath in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from nbconvert->jupyter->jupyter-cjk-xelatex) (0.4.4)
+    Requirement already satisfied: jinja2>=2.4 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from nbconvert->jupyter->jupyter-cjk-xelatex) (2.11.2)
+    Requirement already satisfied: mistune<2,>=0.8.1 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from nbconvert->jupyter->jupyter-cjk-xelatex) (0.8.4)
+    Requirement already satisfied: pandocfilters>=1.4.1 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from nbconvert->jupyter->jupyter-cjk-xelatex) (1.4.2)
+    Requirement already satisfied: bleach in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from nbconvert->jupyter->jupyter-cjk-xelatex) (3.1.5)
+    Requirement already satisfied: prometheus-client in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from notebook->jupyter->jupyter-cjk-xelatex) (0.8.0)
+    Requirement already satisfied: Send2Trash in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from notebook->jupyter->jupyter-cjk-xelatex) (1.5.0)
+    Requirement already satisfied: terminado>=0.8.1 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from notebook->jupyter->jupyter-cjk-xelatex) (0.8.3)
+    Requirement already satisfied: widgetsnbextension~=3.5.0 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from ipywidgets->jupyter->jupyter-cjk-xelatex) (3.5.1)
+    Requirement already satisfied: python-dateutil>=2.1 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from jupyter-client>=4.1->qtconsole->jupyter->jupyter-cjk-xelatex) (2.8.1)
+    Requirement already satisfied: six in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from traitlets->qtconsole->jupyter->jupyter-cjk-xelatex) (1.15.0)
+    Requirement already satisfied: decorator in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from traitlets->qtconsole->jupyter->jupyter-cjk-xelatex) (4.4.2)
+    Requirement already satisfied: pickleshare in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from ipython>=5.0.0->ipykernel->jupyter->jupyter-cjk-xelatex) (0.7.5)
+    Requirement already satisfied: pexpect; sys_platform != "win32" in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from ipython>=5.0.0->ipykernel->jupyter->jupyter-cjk-xelatex) (4.8.0)
+    Requirement already satisfied: backcall in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from ipython>=5.0.0->ipykernel->jupyter->jupyter-cjk-xelatex) (0.2.0)
+    Requirement already satisfied: setuptools>=18.5 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from ipython>=5.0.0->ipykernel->jupyter->jupyter-cjk-xelatex) (49.2.0.post20200714)
+    Requirement already satisfied: jedi>=0.10 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from ipython>=5.0.0->ipykernel->jupyter->jupyter-cjk-xelatex) (0.17.1)
+    Requirement already satisfied: wcwidth in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->jupyter-console->jupyter->jupyter-cjk-xelatex) (0.2.5)
+    Requirement already satisfied: jsonschema!=2.5.0,>=2.4 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from nbformat>=4.4->nbconvert->jupyter->jupyter-cjk-xelatex) (3.0.2)
+    Requirement already satisfied: MarkupSafe>=0.23 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from jinja2>=2.4->nbconvert->jupyter->jupyter-cjk-xelatex) (1.1.1)
+    Requirement already satisfied: webencodings in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from bleach->nbconvert->jupyter->jupyter-cjk-xelatex) (0.5.1)
+    Requirement already satisfied: packaging in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from bleach->nbconvert->jupyter->jupyter-cjk-xelatex) (20.4)
+    Requirement already satisfied: ptyprocess>=0.5 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from pexpect; sys_platform != "win32"->ipython>=5.0.0->ipykernel->jupyter->jupyter-cjk-xelatex) (0.6.0)
+    Requirement already satisfied: parso<0.8.0,>=0.7.0 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from jedi>=0.10->ipython>=5.0.0->ipykernel->jupyter->jupyter-cjk-xelatex) (0.7.0)
+    Requirement already satisfied: attrs>=17.4.0 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from jsonschema!=2.5.0,>=2.4->nbformat>=4.4->nbconvert->jupyter->jupyter-cjk-xelatex) (19.3.0)
+    Requirement already satisfied: pyrsistent>=0.14.0 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from jsonschema!=2.5.0,>=2.4->nbformat>=4.4->nbconvert->jupyter->jupyter-cjk-xelatex) (0.16.0)
+    Requirement already satisfied: pyparsing>=2.0.2 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from packaging->bleach->nbconvert->jupyter->jupyter-cjk-xelatex) (2.4.7)
+    Building wheels for collected packages: jupyter-cjk-xelatex
+      Building wheel for jupyter-cjk-xelatex (setup.py) ... [?25ldone
+    [?25h  Created wheel for jupyter-cjk-xelatex: filename=jupyter_cjk_xelatex-0.2-py3-none-any.whl size=2076 sha256=7958ac18c463bb7317602ce83b18b6961573c844ee669d2095738ea2ccfaac11
+      Stored in directory: /home/ec2-user/.cache/pip/wheels/5e/03/62/b6652316f429b43ac12e266fb32593cb127d6d19ab1a2dff12
+    Successfully built jupyter-cjk-xelatex
+    Installing collected packages: jupyter-cjk-xelatex
+    Successfully installed jupyter-cjk-xelatex-0.2
+    [33mWARNING: You are using pip version 20.1.1; however, version 20.2.3 is available.
+    You should consider upgrading via the '/home/ec2-user/anaconda3/envs/pytorch_p36/bin/python -m pip install --upgrade pip' command.[0m
+
+
+
+```python
+!pip install nbconvert
+
+```
+
+    Requirement already satisfied: nbconvert in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (5.6.1)
+    Requirement already satisfied: jupyter-core in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from nbconvert) (4.6.3)
+    Requirement already satisfied: defusedxml in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from nbconvert) (0.6.0)
+    Requirement already satisfied: traitlets>=4.2 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from nbconvert) (4.3.3)
+    Requirement already satisfied: bleach in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from nbconvert) (3.1.5)
+    Requirement already satisfied: mistune<2,>=0.8.1 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from nbconvert) (0.8.4)
+    Requirement already satisfied: pygments in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from nbconvert) (2.6.1)
+    Requirement already satisfied: jinja2>=2.4 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from nbconvert) (2.11.2)
+    Requirement already satisfied: nbformat>=4.4 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from nbconvert) (5.0.7)
+    Requirement already satisfied: entrypoints>=0.2.2 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from nbconvert) (0.3)
+    Requirement already satisfied: testpath in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from nbconvert) (0.4.4)
+    Requirement already satisfied: pandocfilters>=1.4.1 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from nbconvert) (1.4.2)
+    Requirement already satisfied: six in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from traitlets>=4.2->nbconvert) (1.15.0)
+    Requirement already satisfied: ipython-genutils in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from traitlets>=4.2->nbconvert) (0.2.0)
+    Requirement already satisfied: decorator in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from traitlets>=4.2->nbconvert) (4.4.2)
+    Requirement already satisfied: webencodings in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from bleach->nbconvert) (0.5.1)
+    Requirement already satisfied: packaging in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from bleach->nbconvert) (20.4)
+    Requirement already satisfied: MarkupSafe>=0.23 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from jinja2>=2.4->nbconvert) (1.1.1)
+    Requirement already satisfied: jsonschema!=2.5.0,>=2.4 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from nbformat>=4.4->nbconvert) (3.0.2)
+    Requirement already satisfied: pyparsing>=2.0.2 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from packaging->bleach->nbconvert) (2.4.7)
+    Requirement already satisfied: setuptools in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from jsonschema!=2.5.0,>=2.4->nbformat>=4.4->nbconvert) (49.2.0.post20200714)
+    Requirement already satisfied: pyrsistent>=0.14.0 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from jsonschema!=2.5.0,>=2.4->nbformat>=4.4->nbconvert) (0.16.0)
+    Requirement already satisfied: attrs>=17.4.0 in /home/ec2-user/anaconda3/envs/pytorch_p36/lib/python3.6/site-packages (from jsonschema!=2.5.0,>=2.4->nbformat>=4.4->nbconvert) (19.3.0)
+    [33mWARNING: You are using pip version 20.1.1; however, version 20.2.3 is available.
+    You should consider upgrading via the '/home/ec2-user/anaconda3/envs/pytorch_p36/bin/python -m pip install --upgrade pip' command.[0m
+
 
 
 ```python
